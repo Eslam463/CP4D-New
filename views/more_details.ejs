@@ -1,0 +1,69 @@
+<%- include ('./partial/header.ejs') -%>
+  <%- include ('./partial/navbar.ejs') -%>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <h3>Credit Card</h3>
+          <h4>Your Current Balance : $</h4>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Transaction date</th>
+                <th>Operation</th>
+                <th>Account Type </th>
+                <th>Amount</th>
+                <th>Category </th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if( result.length!=0){ for(i=0;i< result.length; i++){ %>
+                <tr>
+                  <td>
+                    <%=result[i].eventCreateDate %>
+                  </td>
+                  <td>
+                    <%=result[i]. operation %>
+                  </td>
+                  <td>
+                    <%=result[i].accountType %>
+                  </td>
+
+                  <td>
+                    <%=result[i].amount %>
+                  </td>
+                  <td>
+                    <%=result[i].category %>
+                  </td>
+                </tr>
+                <% } %>
+                  <% } else{ %>
+                    <tr>
+                      <td colspan="7">No Data Found</td>
+                    </tr>
+                    <% } %>
+
+            </tbody>
+          </table>
+          <a class="btn btn-secondary analysis" href="/show_analysis">show analysis</a>
+
+        </div>
+
+        <div class="col-md-2 ">
+
+          <%- include ('./partial/sidebar.ejs') -%>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+    <%- include ('./partial/footer.ejs') -%>

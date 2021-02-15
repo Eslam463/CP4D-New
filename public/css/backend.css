@@ -1,0 +1,138 @@
+html,
+body {
+    background-color: #F4F4F4;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+}
+
+.asterisk {
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 8px;
+    color: #D20707;
+}
+
+
+/*					start {nav bar} edit		 */
+
+.fa-landmark {
+    color: #DB0011;
+    font-size: 50px;
+}
+
+.nav-item.dropdown.drop-right.user {
+    position: relative;
+    left: 250px;
+}
+
+
+/*					end {nav bar} edit		 */
+
+.center1 {
+    margin: auto;
+    width: 40%;
+    background-color: #9FA1A4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/*start page */
+
+.btn.btn-dark.start_btn {
+    color: green;
+}
+
+
+/*					start {Login} edit		 */
+
+.login {
+    margin-top: 40px;
+    padding: 20px 50px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #9FA1A4;
+    opacity: 90%
+}
+
+
+/*					end {Login} edit		 */
+
+
+/*secound page */
+
+h4 {
+    margin-top: 20px;
+}
+
+h6 {
+    margin-top: 20px;
+    color: #000000;
+}
+
+.support {
+    background-color: #9FA1A4;
+    border-radius: 20px;
+    height: 200px;
+    width: 240px;
+}
+
+.foregin {
+    border-radius: 20px;
+    width: 240px;
+    background-color: #9FA1A4;
+}
+
+.view-more {
+    text-decoration: none;
+    position: absolute;
+    left: 88%;
+}
+
+.view-more:hover {
+    color: black;
+}
+
+ul.support {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+li {
+    padding: 4px;
+}
+
+.accounts {
+    position: relative;
+    top: 15%;
+    left: 59%;
+    padding-top: 15px;
+}
+
+
+/*account details*/
+
+.btn.btn-secondary.analysis {
+    text-decoration: none;
+    position: absolute;
+    left: 88%;
+}
+
+.analysis:hover {
+    color: black;
+}
+
+
+/*footer*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #9FA1A4;
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,30 @@
+<%- include ('./partial/header.ejs') -%>
+  <%- include ('./partial/navbar.ejs') -%>
+
+
+    <div class="center1">
+
+      <h4>List of Accounts:</h4>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Select one
+        </button>
+        <ul class="dropdown-menu">
+          <!-- dynamic list list distict number of the accounts for each user-->
+
+          <% if( result.length!=0){ for(i=0;i < result.length; i++){ %>
+            <li>
+              <a href="/customers/7965">
+                <%=result[i].accountType %>
+              </a>
+            </li>
+            <% } %>
+              <% } else{ %>
+                <p>No Data Found</p>
+                <% } %>
+        </ul>
+      </div>
+    </div>
+
+
+    <br>
+    <%- include ('./partial/footer.ejs') -%>
